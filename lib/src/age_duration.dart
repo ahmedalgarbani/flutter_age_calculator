@@ -2,31 +2,31 @@
 class AgeDuration {
   /// Years component of the age
   final int years;
-  
+
   /// Months component of the age
   final int months;
-  
+
   /// Days component of the age
   final int days;
-  
+
   /// Hours component of the age
   final int hours;
-  
+
   /// Minutes component of the age
   final int minutes;
-  
+
   /// Seconds component of the age
   final int seconds;
-  
+
   /// Total number of days lived
   final int totalDays;
-  
+
   /// Total number of hours lived
   final int totalHours;
-  
+
   /// Total number of minutes lived
   final int totalMinutes;
-  
+
   /// Total number of seconds lived
   final int totalSeconds;
 
@@ -81,7 +81,7 @@ class AgeDuration {
       totalSeconds: json['totalSeconds'] ?? 0,
     );
   }
-  
+
   /// Equality operator
   @override
   bool operator ==(Object other) {
@@ -94,7 +94,7 @@ class AgeDuration {
         other.minutes == minutes &&
         other.seconds == seconds;
   }
-  
+
   /// Hash code
   @override
   int get hashCode {

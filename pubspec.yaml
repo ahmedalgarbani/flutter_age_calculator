@@ -1,6 +1,6 @@
 name: flutter_age_calculator
-description: "description:  Advanced age calculator for Flutter with timezone support, multiple calendar systems, localization, and comprehensive date calculations. Perfect for birthday apps, age verification, and date utilities."
-version: 1.0.2
+description: "description:  Flutter age calculator with multi-calendar, timezone, and localization support."
+version: 1.0.3
 homepage: https://github.com/ahmedalgarbani/flutter_age_calculator
 repository: https://github.com/ahmedalgarbani/flutter_age_calculator
 issue_tracker: https://github.com/ahmedalgarbani/flutter_age_calculator/issues
@@ -12,7 +12,6 @@ topics:
   - date
   - time
   - birthday
-  
 
 # screenshots:
 #   - description: 'Age calculation with multiple formats'
@@ -28,8 +27,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  intl: ^0.18.1
-  meta: ^1.9.1
+  intl: ^0.20.2
+  meta: ^1.17.0
 
 dev_dependencies:
   flutter_test:

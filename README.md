@@ -60,7 +60,7 @@
 ```yaml
 # pubspec.yaml
 dependencies:
-  flutter_age_calculator: ^1.0.2
+  flutter_age_calculator: ^1.0.3
 ```
 
 ```dart

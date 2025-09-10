@@ -2,16 +2,16 @@
 enum CalendarSystem {
   /// Standard Gregorian calendar
   gregorian,
-  
+
   /// Islamic Hijri calendar
   hijri,
-  
+
   /// Persian/Jalali calendar
   persian,
-  
+
   /// Buddhist calendar
   buddhist,
-  
+
   /// Hebrew calendar
   hebrew,
 }
@@ -33,38 +33,39 @@ class CalendarHelper {
         return _hebrewToGregorian(date);
     }
   }
-  
+
   /// Converts Hijri date to Gregorian
   /// This is a simplified approximation - for production use, implement precise conversion
   static DateTime _hijriToGregorian(DateTime hijriDate) {
     int year = hijriDate.year;
     int month = hijriDate.month;
     int day = hijriDate.day;
-    
+
     // Simplified conversion using average year lengths
     // Hijri year ≈ 354.37 days, Gregorian year ≈ 365.25 days
     // This is an approximation - use proper astronomical calculations for precision
     double gregorianYear = ((year - 1) * 354.37) / 365.25 + 622;
     int targetYear = gregorianYear.round();
-    
+
     // Adjust for month and day
-    double dayOfYear = ((month - 1) * 29.53) + day; // Average Hijri month ≈ 29.53 days
+    double dayOfYear =
+        ((month - 1) * 29.53) + day; // Average Hijri month ≈ 29.53 days
     int adjustedDay = (dayOfYear * 365.25 / 354.37).round();
-    
+
     DateTime baseDate = DateTime(targetYear, 1, 1);
     return baseDate.add(Duration(days: adjustedDay - 1));
   }
-  
+
   /// Converts Persian date to Gregorian
   /// Simplified conversion - Persian new year starts around March 21
   static DateTime _persianToGregorian(DateTime persianDate) {
     int persianYear = persianDate.year;
     int persianMonth = persianDate.month;
     int persianDay = persianDate.day;
-    
+
     // Persian year starts around March 21 of Gregorian calendar
     int gregorianYear = persianYear + 621;
-    
+
     // Approximate conversion - first 6 months have 31 days, next 5 have 30 days, last has 29/30
     int dayOfYear = 0;
     if (persianMonth <= 6) {
@@ -74,12 +75,12 @@ class CalendarHelper {
     } else {
       dayOfYear = 6 * 31 + 5 * 30 + persianDay;
     }
-    
+
     // Persian new year is approximately March 21
     DateTime newYear = DateTime(gregorianYear, 3, 21);
     return newYear.add(Duration(days: dayOfYear - 1));
   }
-  
+
   /// Converts Buddhist date to Gregorian
   /// Buddhist era is 543 years ahead of Common Era
   static DateTime _buddhistToGregorian(DateTime buddhistDate) {
@@ -92,7 +93,7 @@ class CalendarHelper {
       buddhistDate.second,
     );
   }
-  
+
   /// Converts Hebrew date to Gregorian
   /// Hebrew calendar is approximately 3760 years ahead
   static DateTime _hebrewToGregorian(DateTime hebrewDate) {
@@ -107,7 +108,7 @@ class CalendarHelper {
       hebrewDate.second,
     );
   }
-  
+
   /// Gets the display name for a calendar system
   static String getCalendarName(CalendarSystem calendar) {
     switch (calendar) {
@@ -123,7 +124,7 @@ class CalendarHelper {
         return 'Hebrew';
     }
   }
-  
+
   /// Gets all available calendar systems
   static List<CalendarSystem> getAllCalendars() {
     return CalendarSystem.values;
