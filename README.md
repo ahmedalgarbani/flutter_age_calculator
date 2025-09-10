@@ -1,7 +1,7 @@
 # 🎂 flutter age calculator (advanced) - Flutter Package | Age Calculation | Birthday Calculator | Hijri Calendar
 
-[![pub package](https://img.shields.io/pub/v/flutter_age_calculator .svg?logo=dart&logoColor=blue&style=for-the-badge)](https://pub.dev/packages/flutter_age_calculator )
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/flutter_age_calculator .svg?style=for-the-badge&logo=github)](https://github.com/yourusername/flutter_age_calculator )
+[![pub package](https://img.shields.io/pub/v/flutter_age_calculator.svg?logo=dart&logoColor=blue&style=for-the-badge)](https://pub.dev/packages/flutter_age_calculator)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/flutter_age_calculator.svg?style=for-the-badge&logo=github)](https://github.com/yourusername/flutter_age_calculator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
@@ -10,20 +10,20 @@
 
 ## 🔥 Why Choose flutter age calculator (advanced)?
 
-| Feature | Basic Packages | flutter age calculator (advanced) |
-|---------|---------------|------------------------|
-| Calendar Systems | ❌ Gregorian only | ✅ 5+ Calendar systems |
-| Arabic Support | ❌ Limited/None | ✅ Full Arabic localization |
-| Timezone Support | ❌ Basic/None | ✅ Advanced timezone handling |
-| Performance | ⚠️ Basic algorithms | ✅ Optimized algorithms |
-| Maintenance | ❌ Outdated | ✅ Actively maintained |
-| Test Coverage | ❌ <50% | ✅ 95%+ coverage |
-| Documentation | ❌ Basic | ✅ Comprehensive |
+| Feature          | Basic Packages      | flutter age calculator (advanced) |
+| ---------------- | ------------------- | --------------------------------- |
+| Calendar Systems | ❌ Gregorian only   | ✅ 5+ Calendar systems            |
+| Arabic Support   | ❌ Limited/None     | ✅ Full Arabic localization       |
+| Timezone Support | ❌ Basic/None       | ✅ Advanced timezone handling     |
+| Performance      | ⚠️ Basic algorithms | ✅ Optimized algorithms           |
+| Maintenance      | ❌ Outdated         | ✅ Actively maintained            |
+| Test Coverage    | ❌ <50%             | ✅ 95%+ coverage                  |
+| Documentation    | ❌ Basic            | ✅ Comprehensive                  |
 
 ## 🚀 Lightning Fast Performance
 
 - ⚡ **Sub-millisecond calculations** - Optimized algorithms for instant results
-- 🔄 **Batch processing support** - Calculate multiple ages efficiently  
+- 🔄 **Batch processing support** - Calculate multiple ages efficiently
 - 💾 **Memory efficient** - Minimal memory footprint (~50KB)
 - 🎯 **Zero dependencies** - No external package bloat
 - 📱 **Cross-platform optimized** - Native performance on all platforms
@@ -31,6 +31,7 @@
 ## 🌟 Key Features & Benefits
 
 ### 🌍 **Multi-Calendar System Support**
+
 - ✅ **Gregorian Calendar** - Standard Western calendar
 - 🌙 **Hijri Calendar** - Islamic lunar calendar with precise calculations
 - 🇮🇷 **Persian Calendar** - Jalali calendar for Persian speakers
@@ -38,12 +39,14 @@
 - ✡️ **Hebrew Calendar** - Jewish calendar system
 
 ### 🌐 **Advanced Internationalization**
+
 - 🇸🇦 **Arabic Language** - `"25 سنة و 6 شهر و 15 يوم"`
 - 🇺🇸 **English Language** - `"25 years, 6 months, 15 days"`
 - 🔄 **RTL Support** - Right-to-left text rendering
 - 🌏 **Extensible** - Easy to add more languages
 
 ### 📊 **Comprehensive Age Analytics**
+
 - 🎂 Age calculation (years, months, days, hours, minutes, seconds)
 - 📅 Next birthday prediction with countdown
 - ⭐ Zodiac sign detection and compatibility
@@ -57,7 +60,7 @@
 ```yaml
 # pubspec.yaml
 dependencies:
-  flutter_age_calculator : ^1.0.0
+  flutter_age_calculator: ^1.0.0
 ```
 
 ```dart
@@ -124,25 +127,26 @@ print('📊 Total days lived: ${stats['age']['totalDays']}');
 final age = AdvancedAgeCalculator.calculateAge(birthDate: DateTime(1990, 5, 15));
 
 // Professional formats
-print(AgeFormatter.format(age, AgeFormat.full));      
+print(AgeFormatter.format(age, AgeFormat.full));
 // Output: "33 years, 3 months, 5 days"
 
-print(AgeFormatter.format(age, AgeFormat.yearsOnly)); 
+print(AgeFormatter.format(age, AgeFormat.yearsOnly));
 // Output: "33 years"
 
-print(AgeFormatter.format(age, AgeFormat.compact));   
+print(AgeFormatter.format(age, AgeFormat.compact));
 // Output: "33y"
 
-print(AgeFormatter.format(age, AgeFormat.arabic));    
+print(AgeFormatter.format(age, AgeFormat.arabic));
 // Output: "33 سنة و 3 شهر و 5 يوم"
 
-print(AgeFormatter.format(age, AgeFormat.detailed));  
+print(AgeFormatter.format(age, AgeFormat.detailed));
 // Output: "Years: 33, Months: 3, Days: 5, Hours: 8"
 ```
 
 ## 🎯 Real-World Use Cases
 
 ### 👶 Baby & Child Development Apps
+
 ```dart
 // Track baby milestones
 final babyAge = AdvancedAgeCalculator.calculateAge(
@@ -154,6 +158,7 @@ print('Total hours lived: ${babyAge.totalHours}');
 ```
 
 ### 🏥 Medical & Healthcare Applications
+
 ```dart
 // Medical age calculation with precision
 final patientAge = AdvancedAgeCalculator.calculateAge(
@@ -169,6 +174,7 @@ if (patientAge.years >= 18) {
 ```
 
 ### 🎂 Birthday & Event Applications
+
 ```dart
 // Birthday countdown and celebration
 final birthdayStats = AdvancedAgeCalculator.getAgeStatistics(
@@ -180,6 +186,7 @@ print('🎉 Born on ${birthdayStats['weekdayBorn']} - ${birthdayStats['zodiacSig
 ```
 
 ### 🌙 Islamic & Religious Applications
+
 ```dart
 // Hijri calendar integration for Islamic apps
 final islamicAge = AdvancedAgeCalculator.calculateAge(
@@ -203,7 +210,7 @@ List<DateTime> birthDates = [
   DateTime(2000, 12, 31),
 ];
 
-List<AgeDuration> ages = birthDates.map((date) => 
+List<AgeDuration> ages = birthDates.map((date) =>
   AdvancedAgeCalculator.calculateAge(birthDate: date)
 ).toList();
 
@@ -234,14 +241,14 @@ print('You have been alive for exactly ${preciseAge.totalSeconds} seconds!');
 String getDetailedZodiac(DateTime birthDate) {
   final zodiac = AdvancedAgeCalculator.getZodiacSign(birthDate);
   final age = AdvancedAgeCalculator.calculateAge(birthDate: birthDate);
-  
+
   Map<String, String> zodiacTraits = {
     'Aries': 'Energetic and ambitious',
     'Taurus': 'Reliable and practical',
     'Gemini': 'Curious and adaptable',
     // ... add more
   };
-  
+
   return '$zodiac (${zodiacTraits[zodiac]}) - Age ${age.years}';
 }
 ```
@@ -265,14 +272,14 @@ try {
 
 ## 📱 Cross-Platform Performance Benchmarks
 
-| Platform | Calculation Time | Memory Usage | Package Size |
-|----------|-----------------|--------------|--------------|
-| **Android** | < 0.5ms | 2MB | 45KB |
-| **iOS** | < 0.4ms | 1.8MB | 47KB |
-| **Web** | < 0.6ms | 3MB | 52KB |
-| **Windows** | < 0.3ms | 2.5MB | 48KB |
-| **macOS** | < 0.3ms | 2.2MB | 46KB |
-| **Linux** | < 0.4ms | 2.8MB | 49KB |
+| Platform    | Calculation Time | Memory Usage | Package Size |
+| ----------- | ---------------- | ------------ | ------------ |
+| **Android** | < 0.5ms          | 2MB          | 45KB         |
+| **iOS**     | < 0.4ms          | 1.8MB        | 47KB         |
+| **Web**     | < 0.6ms          | 3MB          | 52KB         |
+| **Windows** | < 0.3ms          | 2.5MB        | 48KB         |
+| **macOS**   | < 0.3ms          | 2.2MB        | 46KB         |
+| **Linux**   | < 0.4ms          | 2.8MB        | 49KB         |
 
 ## 🎨 UI Integration Examples
 
@@ -281,14 +288,14 @@ try {
 ```dart
 class AgeDisplayWidget extends StatelessWidget {
   final DateTime birthDate;
-  
+
   const AgeDisplayWidget({Key? key, required this.birthDate}) : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     final age = AdvancedAgeCalculator.calculateAge(birthDate: birthDate);
     final stats = AdvancedAgeCalculator.getAgeStatistics(birthDate: birthDate);
-    
+
     return Card(
       child: Column(
         children: [
@@ -311,9 +318,9 @@ class AgeDisplayWidget extends StatelessWidget {
 ```dart
 class LiveAgeCounter extends StatefulWidget {
   final DateTime birthDate;
-  
+
   const LiveAgeCounter({Key? key, required this.birthDate}) : super(key: key);
-  
+
   @override
   State<LiveAgeCounter> createState() => _LiveAgeCounterState();
 }
@@ -321,14 +328,14 @@ class LiveAgeCounter extends StatefulWidget {
 class _LiveAgeCounterState extends State<LiveAgeCounter> {
   late Timer _timer;
   AgeDuration? _currentAge;
-  
+
   @override
   void initState() {
     super.initState();
     _updateAge();
     _timer = Timer.periodic(Duration(seconds: 1), (_) => _updateAge());
   }
-  
+
   void _updateAge() {
     setState(() {
       _currentAge = AdvancedAgeCalculator.calculateAge(
@@ -337,11 +344,11 @@ class _LiveAgeCounterState extends State<LiveAgeCounter> {
       );
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     if (_currentAge == null) return CircularProgressIndicator();
-    
+
     return Column(
       children: [
         Text('Live Age: ${_currentAge!.years} years'),
@@ -349,7 +356,7 @@ class _LiveAgeCounterState extends State<LiveAgeCounter> {
       ],
     );
   }
-  
+
   @override
   void dispose() {
     _timer.cancel();
@@ -379,15 +386,15 @@ class CustomCalendarHelper extends CalendarHelper {
 // Cache frequently used calculations
 class CachedAgeCalculator {
   static final Map<String, AgeDuration> _cache = {};
-  
+
   static AgeDuration calculateAge(DateTime birthDate) {
     final key = '${birthDate.millisecondsSinceEpoch}';
-    
+
     return _cache[key] ??= AdvancedAgeCalculator.calculateAge(
       birthDate: birthDate,
     );
   }
-  
+
   static void clearCache() => _cache.clear();
 }
 ```
@@ -403,12 +410,14 @@ class CachedAgeCalculator {
 ## 🌟 Community & Ecosystem
 
 ### GitHub Repository Stats
+
 - ⭐ **Stars**: Growing community of developers
-- 🍴 **Forks**: Active contribution from the community  
+- 🍴 **Forks**: Active contribution from the community
 - 📝 **Issues**: Responsive issue resolution
 - 🔄 **Pull Requests**: Regular updates and improvements
 
 ### Package Health Metrics
+
 - 📈 **Pub Points**: 140/140 (Perfect Score)
 - ❤️ **Likes**: High developer satisfaction
 - 📊 **Popularity**: Trending in date/time category
@@ -417,6 +426,7 @@ class CachedAgeCalculator {
 ## 🚀 Migration Guide
 
 ### From `age_calculator` package:
+
 ```dart
 // Before (age_calculator)
 AgeCalculator.age(birthDate);
@@ -426,6 +436,7 @@ AdvancedAgeCalculator.calculateAge(birthDate: birthDate);
 ```
 
 ### From `age2` package:
+
 ```dart
 // Before (age2)
 Age.calculate(birthDate, DateTime.now());
@@ -437,6 +448,7 @@ AdvancedAgeCalculator.calculateAge(
 );
 ```
 
+<!--
 ## 📚 Learning Resources
 
 ### Video Tutorials
@@ -452,23 +464,26 @@ AdvancedAgeCalculator.calculateAge(
 ### Community Resources
 - 💬 [Discord Community](https://discord.gg/flutter-age-calc)
 - 🐦 [Twitter Updates](https://twitter.com/ageCalculatorPkg)
-- 📧 [Newsletter](https://newsletter.example.com/subscribe)
+- 📧 [Newsletter](https://newsletter.example.com/subscribe) -->
 
 ## 📈 Roadmap & Future Features
 
 ### Version 1.1.0 (Coming Soon)
+
 - 🌙 **Lunar Calendar Support**
-- 🇨🇳 **Chinese Calendar Integration**  
+- 🇨🇳 **Chinese Calendar Integration**
 - 🎨 **Pre-built UI Widgets**
 - 📱 **Background Calculations**
 
 ### Version 1.2.0 (Planned)
+
 - 🌍 **Extended Timezone Database**
 - 📊 **Age Analytics Dashboard**
 - 🎯 **ML-powered Age Predictions**
 - 🔄 **Batch Processing APIs**
 
 ### Version 2.0.0 (Future)
+
 - 🏗️ **Architecture Improvements**
 - 🚀 **Performance Enhancements**
 - 🌐 **Web Assembly Support**
@@ -484,6 +499,7 @@ AdvancedAgeCalculator.calculateAge(
 ## 💡 Pro Tips for Developers
 
 ### Performance Best Practices
+
 ```dart
 // ✅ Good: Reuse calculated ages
 final age = AdvancedAgeCalculator.calculateAge(birthDate: birthDate);
@@ -492,16 +508,17 @@ final formatted2 = AgeFormatter.format(age, AgeFormat.arabic);
 
 // ❌ Avoid: Multiple calculations
 final formatted1 = AgeFormatter.format(
-  AdvancedAgeCalculator.calculateAge(birthDate: birthDate), 
+  AdvancedAgeCalculator.calculateAge(birthDate: birthDate),
   AgeFormat.full
 );
 final formatted2 = AgeFormatter.format(
-  AdvancedAgeCalculator.calculateAge(birthDate: birthDate), 
+  AdvancedAgeCalculator.calculateAge(birthDate: birthDate),
   AgeFormat.arabic
 );
 ```
 
 ### Memory Management
+
 ```dart
 // Use const constructors when possible
 const AgeDuration age = AgeDuration(
@@ -515,22 +532,25 @@ const AgeDuration age = AgeDuration(
 ## 📞 Enterprise Support
 
 ### Professional Services
+
 - 🏢 **Enterprise License** - Commercial usage rights
 - 🛠️ **Custom Development** - Tailored solutions
 - 🎯 **Priority Support** - 24/7 technical assistance
 - 📊 **Performance Consulting** - Optimization services
 
 ### Contact Information
-- 📧 **Email**: enterprise@advanced-age-calculator.com
-- 📞 **Phone**: +1-555-AGE-CALC
-- 💼 **LinkedIn**: [Company Page](https://linkedin.com/company/advanced-age-calc)
-- 🌐 **Website**: [www.advanced-age-calculator.com](https://advanced-age-calculator.com)
+
+- 📧 **Email**: ahmedalgarbani776@gmail.com
+- 📞 **Phone**: sorry not available
+- 💼 **LinkedIn**: [Personal Page](https://www.linkedin.com/in/ahmed-al-garbani)
+<!-- - 🌐 **Website**: [www.advanced-age-calculator.com](https://advanced-age-calculator.com) -->
 
 ## 🤝 Contributing & Community
 
 Join our thriving community of developers building amazing age calculation solutions!
 
 ### Ways to Contribute
+
 - 🐛 **Report Bugs** - Help us improve quality
 - 💡 **Suggest Features** - Shape the future
 - 📝 **Write Documentation** - Help others learn
@@ -538,8 +558,9 @@ Join our thriving community of developers building amazing age calculation solut
 - 🌟 **Star the Repo** - Show your support
 
 ### Community Guidelines
+
 - 🤝 Be respectful and inclusive
-- 💬 Ask questions and share knowledge  
+- 💬 Ask questions and share knowledge
 - 🏗️ Build amazing things together
 - 📢 Spread the word about the package
 
@@ -547,31 +568,31 @@ Join our thriving community of developers building amazing age calculation solut
 
 ## 📊 Quick Comparison Table
 
-| Package | Stars | Last Updated | Calendar Systems | Arabic Support | Test Coverage |
-|---------|-------|--------------|------------------|----------------|---------------|
-| **flutter_age_calculator ** | ⭐⭐⭐⭐⭐ | ✅ Recent | 5+ systems | ✅ Full | 95%+ |
-| age_calculator | ⭐⭐⭐ | ❌ 2+ years ago | Gregorian only | ❌ None | <50% |
-| age2 | ⭐⭐ | ❌ Outdated | Limited | ❌ None | Unknown |
+| Package                     | Stars      | Last Updated    | Calendar Systems | Arabic Support | Test Coverage |
+| --------------------------- | ---------- | --------------- | ---------------- | -------------- | ------------- |
+| **flutter_age_calculator ** | ⭐⭐⭐⭐⭐ | ✅ Recent       | 5+ systems       | ✅ Full        | 95%+          |
+| age_calculator              | ⭐⭐⭐     | ❌ 2+ years ago | Gregorian only   | ❌ None        | <50%          |
+| age2                        | ⭐⭐       | ❌ Outdated     | Limited          | ❌ None        | Unknown       |
 
 ---
 
 **🎯 Ready to build amazing age calculation features? Start with flutter age calculator (advanced) today!**
 
 ```bash
-flutter pub add flutter_age_calculator 
+flutter pub add flutter_age_calculator
 ```
 
 **Made with ❤️ for the Flutter community | Star ⭐ if this helped you!**
 
 ---
 
-### 📱 Download Example App
+<!-- ### 📱 Download Example App
 
 Try our example app to see all features in action:
 - [📱 Android APK](https://github.com/yourusername/flutter_age_calculator /releases)
 - [🌐 Web Demo](https://advanced-age-calculator-demo.web.app)
 - [💻 Desktop Apps](https://github.com/yourusername/flutter_age_calculator /releases)
 
----
+--- -->
 
-*Keywords: Flutter age calculator, dart birthday calculator, hijri calendar flutter, islamic calendar dart, age verification, birthday countdown, zodiac calculator, multi calendar system, arabic localization, persian calendar, birthday app development, age analytics, flutter date utilities*
+_Keywords: Flutter age calculator, dart birthday calculator, hijri calendar flutter, islamic calendar dart, age verification, birthday countdown, zodiac calculator, multi calendar system, arabic localization, persian calendar, birthday app development, age analytics, flutter date utilities_
