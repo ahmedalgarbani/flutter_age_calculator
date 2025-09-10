@@ -12,14 +12,7 @@ topics:
   - date
   - time
   - birthday
-  - calendar
-  - hijri
-  - persian
-  - timezone
-  - localization
-  - arabic
-  - flutter
-  - dart
+  
 
 # screenshots:
 #   - description: 'Age calculation with multiple formats'
