@@ -1,16 +1,16 @@
-# 🎂 Advanced Age Calculator - Flutter Package | Age Calculation | Birthday Calculator | Hijri Calendar
+# 🎂 flutter age calculator (advanced) - Flutter Package | Age Calculation | Birthday Calculator | Hijri Calendar
 
-[![pub package](https://img.shields.io/pub/v/advanced_age_calculator.svg?logo=dart&logoColor=blue&style=for-the-badge)](https://pub.dev/packages/advanced_age_calculator)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/advanced_age_calculator.svg?style=for-the-badge&logo=github)](https://github.com/yourusername/advanced_age_calculator)
+[![pub package](https://img.shields.io/pub/v/flutter_age_calculator .svg?logo=dart&logoColor=blue&style=for-the-badge)](https://pub.dev/packages/flutter_age_calculator )
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/flutter_age_calculator .svg?style=for-the-badge&logo=github)](https://github.com/yourusername/flutter_age_calculator )
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 
 > **The most comprehensive age calculator package for Flutter** - Calculate ages with precision across multiple calendar systems including **Hijri**, **Persian**, **Buddhist**, and **Hebrew** calendars with full **Arabic localization** support.
 
-## 🔥 Why Choose Advanced Age Calculator?
+## 🔥 Why Choose flutter age calculator (advanced)?
 
-| Feature | Basic Packages | Advanced Age Calculator |
+| Feature | Basic Packages | flutter age calculator (advanced) |
 |---------|---------------|------------------------|
 | Calendar Systems | ❌ Gregorian only | ✅ 5+ Calendar systems |
 | Arabic Support | ❌ Limited/None | ✅ Full Arabic localization |
@@ -57,11 +57,11 @@
 ```yaml
 # pubspec.yaml
 dependencies:
-  advanced_age_calculator: ^1.0.0
+  flutter_age_calculator : ^1.0.0
 ```
 
 ```dart
-import 'package:advanced_age_calculator/advanced_age_calculator.dart';
+import 'package:flutter_age_calculator /flutter_age_calculator .dart';
 
 // Calculate age instantly
 final age = AdvancedAgeCalculator.calculateAge(
@@ -421,7 +421,7 @@ class CachedAgeCalculator {
 // Before (age_calculator)
 AgeCalculator.age(birthDate);
 
-// After (advanced_age_calculator)
+// After (flutter_age_calculator )
 AdvancedAgeCalculator.calculateAge(birthDate: birthDate);
 ```
 
@@ -430,7 +430,7 @@ AdvancedAgeCalculator.calculateAge(birthDate: birthDate);
 // Before (age2)
 Age.calculate(birthDate, DateTime.now());
 
-// After (advanced_age_calculator)
+// After (flutter_age_calculator )
 AdvancedAgeCalculator.calculateAge(
   birthDate: birthDate,
   currentDate: DateTime.now(),
@@ -440,7 +440,7 @@ AdvancedAgeCalculator.calculateAge(
 ## 📚 Learning Resources
 
 ### Video Tutorials
-- 🎥 [Getting Started with Advanced Age Calculator](https://youtube.com/watch?v=tutorial1)
+- 🎥 [Getting Started with flutter age calculator (advanced)](https://youtube.com/watch?v=tutorial1)
 - 🎬 [Hijri Calendar Integration Guide](https://youtube.com/watch?v=tutorial2)
 - 📺 [Building Birthday Apps with Flutter](https://youtube.com/watch?v=tutorial3)
 
@@ -549,16 +549,16 @@ Join our thriving community of developers building amazing age calculation solut
 
 | Package | Stars | Last Updated | Calendar Systems | Arabic Support | Test Coverage |
 |---------|-------|--------------|------------------|----------------|---------------|
-| **advanced_age_calculator** | ⭐⭐⭐⭐⭐ | ✅ Recent | 5+ systems | ✅ Full | 95%+ |
+| **flutter_age_calculator ** | ⭐⭐⭐⭐⭐ | ✅ Recent | 5+ systems | ✅ Full | 95%+ |
 | age_calculator | ⭐⭐⭐ | ❌ 2+ years ago | Gregorian only | ❌ None | <50% |
 | age2 | ⭐⭐ | ❌ Outdated | Limited | ❌ None | Unknown |
 
 ---
 
-**🎯 Ready to build amazing age calculation features? Start with Advanced Age Calculator today!**
+**🎯 Ready to build amazing age calculation features? Start with flutter age calculator (advanced) today!**
 
 ```bash
-flutter pub add advanced_age_calculator
+flutter pub add flutter_age_calculator 
 ```
 
 **Made with ❤️ for the Flutter community | Star ⭐ if this helped you!**
@@ -568,9 +568,9 @@ flutter pub add advanced_age_calculator
 ### 📱 Download Example App
 
 Try our example app to see all features in action:
-- [📱 Android APK](https://github.com/yourusername/advanced_age_calculator/releases)
+- [📱 Android APK](https://github.com/yourusername/flutter_age_calculator /releases)
 - [🌐 Web Demo](https://advanced-age-calculator-demo.web.app)
-- [💻 Desktop Apps](https://github.com/yourusername/advanced_age_calculator/releases)
+- [💻 Desktop Apps](https://github.com/yourusername/flutter_age_calculator /releases)
 
 ---
 
