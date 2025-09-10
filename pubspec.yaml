@@ -1,9 +1,8 @@
 name: flutter_age_calculator
 description: "description:  Flutter age calculator with multi-calendar, timezone, and localization support."
-version: 1.0.3
+version: 1.0.4
 homepage: https://github.com/ahmedalgarbani/flutter_age_calculator
 repository: https://github.com/ahmedalgarbani/flutter_age_calculator
-issue_tracker: https://github.com/ahmedalgarbani/flutter_age_calculator/issues
 documentation: https://pub.dev/documentation/flutter_age_calculator/latest/
 
 topics:
@@ -28,7 +27,7 @@ dependencies:
   flutter:
     sdk: flutter
   intl: ^0.20.2
-  meta: 1.15.0
+  meta: ^1.15.0
 
 dev_dependencies:
   flutter_test:
@@ -37,21 +36,14 @@ dev_dependencies:
   test: ^1.24.0
   mocktail: ^0.3.0
 
-# platforms
-platforms:
-  android:
-  ios:
-  linux:
-  macos:
-  web:
-  windows:
+
 
 funding:
   - https://github.com/sponsors/ahmedalgarbani
 
 # following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter packages.
+# The following section is specific to Flutter packages
 flutter:
 
   # To add assets to your package, add an assets section, like this:
