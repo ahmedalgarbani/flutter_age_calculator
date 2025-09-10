@@ -6,7 +6,7 @@ void main() {
 }
 
 class AdvancedAgeCalculatorApp extends StatelessWidget {
-  const AdvancedAgeCalculatorApp({Key? key}) : super(key: key);
+  const AdvancedAgeCalculatorApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class AdvancedAgeCalculatorApp extends StatelessWidget {
 }
 
 class AgeCalculatorDemo extends StatefulWidget {
-  const AgeCalculatorDemo({Key? key}) : super(key: key);
+  const AgeCalculatorDemo({super.key});
 
   @override
   State<AgeCalculatorDemo> createState() => _AgeCalculatorDemoState();
@@ -342,7 +342,7 @@ class _AgeCalculatorDemoState extends State<AgeCalculatorDemo> {
                   ],
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
       ),

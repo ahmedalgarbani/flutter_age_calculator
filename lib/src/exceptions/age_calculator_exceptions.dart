@@ -1,5 +1,5 @@
 /// Custom exceptions for the Advanced Age Calculator package
-library exceptions;
+library;
 
 /// Base exception class for all age calculator errors
 abstract class AgeCalculatorException implements Exception {
@@ -18,8 +18,7 @@ abstract class AgeCalculatorException implements Exception {
 
 /// Thrown when an invalid date is provided
 class InvalidDateException extends AgeCalculatorException {
-  const InvalidDateException(String message, [String? code])
-      : super(message, code);
+  const InvalidDateException(super.message, [String? code]);
 
   @override
   String toString() =>
@@ -28,8 +27,7 @@ class InvalidDateException extends AgeCalculatorException {
 
 /// Thrown when an unsupported calendar system is used
 class UnsupportedCalendarException extends AgeCalculatorException {
-  const UnsupportedCalendarException(String message, [String? code])
-      : super(message, code);
+  const UnsupportedCalendarException(super.message, [String? code]);
 
   @override
   String toString() =>
@@ -38,8 +36,7 @@ class UnsupportedCalendarException extends AgeCalculatorException {
 
 /// Thrown when an invalid timezone is provided
 class InvalidTimezoneException extends AgeCalculatorException {
-  const InvalidTimezoneException(String message, [String? code])
-      : super(message, code);
+  const InvalidTimezoneException(super.message, [String? code]);
 
   @override
   String toString() =>
@@ -48,8 +45,7 @@ class InvalidTimezoneException extends AgeCalculatorException {
 
 /// Thrown when future birth dates are provided
 class FutureBirthDateException extends AgeCalculatorException {
-  const FutureBirthDateException(String message, [String? code])
-      : super(message, code);
+  const FutureBirthDateException(super.message, [String? code]);
 
   @override
   String toString() =>
@@ -58,8 +54,7 @@ class FutureBirthDateException extends AgeCalculatorException {
 
 /// Thrown when date calculation results in invalid values
 class CalculationException extends AgeCalculatorException {
-  const CalculationException(String message, [String? code])
-      : super(message, code);
+  const CalculationException(super.message, [String? code]);
 
   @override
   String toString() =>

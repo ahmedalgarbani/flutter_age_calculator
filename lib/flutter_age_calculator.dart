@@ -17,7 +17,7 @@
 ///   print(age.years); // Current age in years
 /// }
 /// ```
-library flutter_age_calculator;
+library ;
 
 // Core exports
 export 'src/age_calculator.dart';
